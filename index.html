@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyFree - free educational books, notes and videos.">
+  <title>StudyFree | Learn. Read. Grow.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">Study<span>Free</span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#resources">Resources</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">FREE LEARNING RESOURCES</p>
+          <h1>Learn. Read.<br><span>Grow.</span></h1>
+          <p class="hero-text">
+            Find free educational books, notes, study materials and useful learning videos in one place.
+          </p>
+          <div class="search-box">
+            <input id="searchInput" type="search" placeholder="Search books, notes, subjects..." aria-label="Search resources">
+            <button id="searchBtn">Search</button>
+          </div>
+          <div class="quick-links">
+            <a href="#books">📚 Books</a>
+            <a href="#notes">📝 Notes</a>
+            <a href="#videos">🎥 Videos</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="book-icon">📚</div>
+          <h2>Your Free Study Library</h2>
+          <p>Organized resources for students, available anytime.</p>
+          <div class="stats">
+            <div><strong>Free</strong><small>Resources</small></div>
+            <div><strong>24/7</strong><small>Access</small></div>
+            <div><strong>100%</strong><small>Student Focused</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EXPLORE</p>
+            <h2>Study resources</h2>
+          </div>
+          <p>Start with books, notes or videos.</p>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card" id="books">
+            <div class="icon">📚</div>
+            <h3>Free Books</h3>
+            <p>Discover legally shareable and open educational books.</p>
+            <a href="#subjects">Explore books →</a>
+          </article>
+          <article class="resource-card" id="notes">
+            <div class="icon">📝</div>
+            <h3>Study Notes</h3>
+            <p>Clear notes and revision material organized by subject.</p>
+            <a href="#subjects">Browse notes →</a>
+          </article>
+          <article class="resource-card" id="videos">
+            <div class="icon">🎥</div>
+            <h3>Learning Videos</h3>
+            <p>Useful educational videos from trusted learning sources.</p>
+            <a href="#video-list">Watch videos →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="subjects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SUBJECTS</p>
+            <h2>Popular subjects</h2>
+          </div>
+        </div>
+        <div class="subject-grid" id="subjectGrid">
+          <button class="subject" data-search="engineering">⚙️ <span>Engineering</span></button>
+          <button class="subject" data-search="mathematics maths">📐 <span>Mathematics</span></button>
+          <button class="subject" data-search="physics">⚡ <span>Physics</span></button>
+          <button class="subject" data-search="chemistry">🧪 <span>Chemistry</span></button>
+          <button class="subject" data-search="computer science programming">💻 <span>Computer Science</span></button>
+          <button class="subject" data-search="biology">🧬 <span>Biology</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="video-list">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LEARN ONLINE</p>
+            <h2>Featured videos</h2>
+          </div>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-placeholder">▶</div>
+            <div class="video-content">
+              <span class="tag">Coming soon</span>
+              <h3>Engineering Fundamentals</h3>
+              <p>Add your YouTube educational video here.</p>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-placeholder">▶</div>
+            <div class="video-content">
+              <span class="tag">Coming soon</span>
+              <h3>Mathematics Revision</h3>
+              <p>Add your YouTube educational video here.</p>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-placeholder">▶</div>
+            <div class="video-content">
+              <span class="tag">Coming soon</span>
+              <h3>Science Concepts</h3>
+              <p>Add your YouTube educational video here.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="about">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">ABOUT STUDYFREE</p>
+          <h2>Education should be easier to access.</h2>
+          <p>StudyFree is designed as a simple home for useful, lawful and student-friendly learning resources.</p>
+        </div>
+        <a class="primary-btn" href="mailto:your-email@example.com">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><a class="logo" href="#">Study<span>Free</span></a><p>Learn. Read. Grow.</p></div>
+      <p>© <span id="year"></span> StudyFree. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="noResults" class="no-results" hidden>No matching resources found. Try another search.</div>
+  <script src="script.js"></script>
+</body>
+</html>
